@@ -1,0 +1,10 @@
+.text-align-left{
+    text-align: left;
+}
+.window-size{
+    width: 360px;
+}
+.full-size{
+    width: 100%;
+    overflow: hidden;
+}
