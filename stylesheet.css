@@ -8,3 +8,8 @@
     width: 100%;
     overflow: hidden;
 }
+.tab-icon{
+    width: 28px;
+    height: 28px;
+    margin-right: 12px;
+}

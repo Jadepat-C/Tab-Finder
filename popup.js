@@ -26,9 +26,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 hrElement.classList.add("full-size");
                 output.appendChild(hrElement);
 
+                const iconElement = document.createElement("img");
+                iconElement.src = tab.favIconUrl;
+                iconElement.classList.add("tab-icon");
+
+                const titleElement = document.createElement("div");
+                titleElement.textContent = tab.title;
+                
+
                 const tabElement = document.createElement("div");
-                tabElement.textContent = tab.title;
-                tabElement.classList.add("btn", "text-align-left", "full-size");
+                tabElement.appendChild(iconElement);
+                tabElement.appendChild(titleElement);
+                tabElement.classList.add("btn", "text-align-left", "full-size", "d-flex", "flex-row");
+                
                 output.appendChild(tabElement);
 
                 tabElement.addEventListener("click", function(){
